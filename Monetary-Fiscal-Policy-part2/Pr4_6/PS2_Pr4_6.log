@@ -1,0 +1,147 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 11 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+ -0.6159  0.6159  0.9919  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+pi       0.9000  0.8100  0.7290  0.6561  0.5905
+y        0.9000  0.8100  0.7290  0.6561  0.5905
+r        0.9000  0.8100  0.7290  0.6561  0.5905
+x        0.9000  0.8100  0.7290  0.6561  0.5905
+s        0.9000  0.8100  0.7290  0.6561  0.5905
+c        0.9000  0.8100  0.7290  0.6561  0.5905
+g        0.9000  0.8100  0.7290  0.6561  0.5905
+b        0.9983  0.9936  0.9864  0.9769  0.9655
+t        0.9953  0.9880  0.9785  0.9670  0.9540
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save')" style="font-weight:bold">save</a>
+'oo_.irfs' is not a valid variable name.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PS2_Pr4_6', '/Users/macbookair13/Downloads/downloads/Goethe/2023-2024/MP and FP/PS2/PS2_Pr4_6/PS2_Pr4_6.m', 216)" style="font-weight:bold">PS2_Pr4_6</a> (<a href="matlab: opentoline('/Users/macbookair13/Downloads/downloads/Goethe/2023-2024/MP and FP/PS2/PS2_Pr4_6/PS2_Pr4_6.m',216,0)">line 216</a>)
+save IRFs_data.mat oo_.irfs
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/Applications/Dynare/4.5.7/matlab/dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/dynare.m',235,0)">line 235</a>)
+evalin('base',fname) ;
+} 
+dynare PS2_Pr4_6.mod
+
+Configuring Dynare ...
+[mex] Generalized QZ.
+[mex] Sylvester equation solution.
+[mex] Kronecker products.
+[mex] Sparse kronecker products.
+[mex] Local state space iteration (second order).
+[mex] Bytecode evaluation.
+[mex] k-order perturbation solver.
+[mex] k-order solution simulation.
+[mex] Quasi Monte-Carlo sequence (Sobol).
+[mex] Markov Switching SBVAR.
+
+Using 64-bit preprocessor
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 11 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+MODEL SUMMARY
+
+  Number of variables:         11
+  Number of stochastic shocks: 3
+  Number of state variables:   4
+  Number of jumpers:           4
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_pi_shock   eps_r_shock   eps_g_shock
+eps_pi_shock        0.000000      0.000000      0.000000
+eps_r_shock         0.000000      0.000000      0.000000
+eps_g_shock         0.000000      0.000000      1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pi               y               r               x               s               c               g               b               t          eps_pi           eps_r
+g(-1)                       0.030941        0.015741        0.048380        0.018889       -0.187071       -0.205324        0.900000        0.058814        0.078561               0               0
+b(-1)                              0               0               0               0               0               0               0        0.968054        0.374637               0               0
+eps_pi(-1)                  1.444093       -3.465824        1.732912       -4.158989       -4.260738       -4.332280               0        0.262817        0.101710        0.900000               0
+eps_r(-1)                  -1.237656       -0.629625       -1.035188       -0.755550       -0.774034       -0.787031               0        0.206022        0.079730               0        0.900000
+eps_pi_shock                1.604548       -3.850916        1.925458       -4.621099       -4.734153       -4.813645               0        0.292018        0.113011        1.000000               0
+eps_r_shock                -1.375174       -0.699583       -1.150208       -0.839500       -0.860038       -0.874479               0        0.228913        0.088589               0        1.000000
+eps_g_shock                 0.034379        0.017490        0.053755        0.020987       -0.207857       -0.228138        1.000000        0.065348        0.087290               0               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pi             0.0000     0.0789     0.0062
+y              0.0000     0.0401     0.0016
+r              0.0000     0.1233     0.0152
+x              0.0000     0.0481     0.0023
+s              0.0000     0.4769     0.2274
+c              0.0000     0.5234     0.2739
+g              0.0000     2.2942     5.2632
+b              0.0000     2.2794     5.1957
+t              0.0000     0.9626     0.9266
+eps_pi         0.0000     0.0000     0.0000
+eps_r          0.0000     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          eps_pi_shock   eps_r_shock   eps_g_shock
+pi                0.00          0.00        100.00
+y                 0.00          0.00        100.00
+r                 0.00          0.00        100.00
+x                 0.00          0.00        100.00
+s                 0.00          0.00        100.00
+c                 0.00          0.00        100.00
+g                 0.00          0.00        100.00
+b                 0.00          0.00        100.00
+t                 0.00          0.00        100.00
+eps_pi          100.00          0.00          0.00
+eps_r             0.00        100.00          0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables        pi       y       r       x       s       c       g       b       t
+pi           1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000  0.5108  0.6159
+y            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000  0.5108  0.6159
+r            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000  0.5108  0.6159
+x            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000  0.5108  0.6159
+s           -1.0000 -1.0000 -1.0000 -1.0000  1.0000  1.0000 -1.0000 -0.5108 -0.6159
+c           -1.0000 -1.0000 -1.0000 -1.0000  1.0000  1.0000 -1.0000 -0.5108 -0.6159
+g            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000  0.5108  0.6159
+b            0.5108  0.5108  0.5108  0.5108 -0.5108 -0.5108  0.5108  1.0000  0.9919
+t            0.6159  0.6159  0.6159  0.6159 -0.6159 -0.6159  0.6159  0.9919  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+pi       0.9000  0.8100  0.7290  0.6561  0.5905
+y        0.9000  0.8100  0.7290  0.6561  0.5905
+r        0.9000  0.8100  0.7290  0.6561  0.5905
+x        0.9000  0.8100  0.7290  0.6561  0.5905
+s        0.9000  0.8100  0.7290  0.6561  0.5905
+c        0.9000  0.8100  0.7290  0.6561  0.5905
+g        0.9000  0.8100  0.7290  0.6561  0.5905
+b        0.9983  0.9936  0.9864  0.9769  0.9655
+t        0.9953  0.9880  0.9785  0.9670  0.9540
+Total computing time : 0h00m04s

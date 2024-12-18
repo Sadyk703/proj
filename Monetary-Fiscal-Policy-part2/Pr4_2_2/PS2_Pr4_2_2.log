@@ -1,0 +1,87 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 3
+  Number of state variables:   3
+  Number of jumpers:           4
+  Number of static variables:  2
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_pi_shock   eps_r_shock   eps_g_shock
+eps_pi_shock        0.000000      0.000000      0.000000
+eps_r_shock         0.000000      0.000000      0.000000
+eps_g_shock         0.000000      0.000000      1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pi               y               r               x               s               c               g          eps_pi           eps_r
+g(-1)                       0.030941        0.015741        0.048380        0.018889       -0.187071       -0.205324        0.900000               0               0
+eps_pi(-1)                  1.444093       -3.465824        1.732912       -4.158989       -4.260738       -4.332280               0        0.900000               0
+eps_r(-1)                  -1.237656       -0.629625       -1.035188       -0.755550       -0.774034       -0.787031               0               0        0.900000
+eps_pi_shock                1.604548       -3.850916        1.925458       -4.621099       -4.734153       -4.813645               0        1.000000               0
+eps_r_shock                -1.375174       -0.699583       -1.150208       -0.839500       -0.860038       -0.874479               0               0        1.000000
+eps_g_shock                 0.034379        0.017490        0.053755        0.020987       -0.207857       -0.228138        1.000000               0               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pi             0.0000     0.0789     0.0062
+y              0.0000     0.0401     0.0016
+r              0.0000     0.1233     0.0152
+x              0.0000     0.0481     0.0023
+s              0.0000     0.4769     0.2274
+c              0.0000     0.5234     0.2739
+g              0.0000     2.2942     5.2632
+eps_pi         0.0000     0.0000     0.0000
+eps_r          0.0000     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+          eps_pi_shock   eps_r_shock   eps_g_shock
+pi                0.00          0.00        100.00
+y                 0.00          0.00        100.00
+r                 0.00          0.00        100.00
+x                 0.00          0.00        100.00
+s                 0.00          0.00        100.00
+c                 0.00          0.00        100.00
+g                 0.00          0.00        100.00
+eps_pi          100.00          0.00          0.00
+eps_r             0.00        100.00          0.00
+
+
+
+MATRIX OF CORRELATIONS
+Variables        pi       y       r       x       s       c       g
+pi           1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000
+y            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000
+r            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000
+x            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000
+s           -1.0000 -1.0000 -1.0000 -1.0000  1.0000  1.0000 -1.0000
+c           -1.0000 -1.0000 -1.0000 -1.0000  1.0000  1.0000 -1.0000
+g            1.0000  1.0000  1.0000  1.0000 -1.0000 -1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+pi       0.9000  0.8100  0.7290  0.6561  0.5905
+y        0.9000  0.8100  0.7290  0.6561  0.5905
+r        0.9000  0.8100  0.7290  0.6561  0.5905
+x        0.9000  0.8100  0.7290  0.6561  0.5905
+s        0.9000  0.8100  0.7290  0.6561  0.5905
+c        0.9000  0.8100  0.7290  0.6561  0.5905
+g        0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m06s

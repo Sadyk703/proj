@@ -1,0 +1,96 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 9 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+MODEL SUMMARY
+
+  Number of variables:         9
+  Number of stochastic shocks: 3
+  Number of state variables:   4
+  Number of jumpers:           4
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_pi_shock   eps_r_shock   eps_g_shock
+eps_pi_shock        0.000000      0.000000      0.000000
+eps_r_shock         0.000000      0.000000      0.000000
+eps_g_shock         0.000000      0.000000      1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                  pi               y         r_alter               x               s               c               g          eps_pi           eps_r
+r_alter(-1)                -0.590191       -1.350372        0.514913       -1.620446       -1.684419       -1.687965               0               0               0
+g(-1)                       0.030379        0.051555        0.013238        0.061866       -0.142206       -0.160556        0.900000               0               0
+eps_pi(-1)                  2.809125       -0.605322        0.794312       -0.726387       -0.693975       -0.756653               0        0.900000               0
+eps_r(-1)                  -5.624887       -6.406574       -1.299992       -7.687889       -7.958101       -8.008217               0               0        0.900000
+eps_pi_shock                3.121250       -0.672580        0.882569       -0.807096       -0.771083       -0.840725               0        1.000000               0
+eps_r_shock                -6.249875       -7.118415       -1.444436       -8.542098       -8.842335       -8.898019               0               0        1.000000
+eps_g_shock                 0.033755        0.057284        0.014709        0.068740       -0.158006       -0.178395        1.000000               0               0
+[Warning: Aggregate variance and sum of variances by shocks
+differ by more than 0.01 %] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('th_autocovariances', '/Applications/Dynare/4.5.7/matlab/th_autocovariances.m', 206)" style="font-weight:bold">th_autocovariances</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/th_autocovariances.m',206,0)">line 206</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('disp_th_moments', '/Applications/Dynare/4.5.7/matlab/disp_th_moments.m', 39)" style="font-weight:bold">disp_th_moments</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/disp_th_moments.m',39,0)">line 39</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', '/Applications/Dynare/4.5.7/matlab/stoch_simul.m', 178)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/stoch_simul.m',178,0)">line 178</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PS2_Pr4_3', '/Users/macbookair13/Downloads/downloads/Goethe/2023-2024/MP and FP/PS2/PS2_Pr4_3/PS2_Pr4_3.m', 195)" style="font-weight:bold">PS2_Pr4_3</a> (<a href="matlab: opentoline('/Users/macbookair13/Downloads/downloads/Goethe/2023-2024/MP and FP/PS2/PS2_Pr4_3/PS2_Pr4_3.m',195,0)">line 195</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/Applications/Dynare/4.5.7/matlab/dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/dynare.m',235,0)">line 235</a>)] 
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+pi             0.0000     0.0479     0.0023
+y              0.0000     0.0699     0.0049
+r_alter        0.0000     0.0650     0.0042
+x              0.0000     0.0839     0.0070
+s              0.0000     0.4610     0.2125
+c              0.0000     0.5077     0.2577
+g              0.0000     2.2942     5.2632
+eps_pi         0.0000     0.0000     0.0000
+eps_r          0.0000     0.0000     0.0000
+
+
+
+VARIANCE DECOMPOSITION (in percent)
+           eps_pi_shock   eps_r_shock   eps_g_shock
+pi                 0.00          0.00        100.00
+y                  0.00          0.00        100.00
+r_alter            0.00          0.00        100.00
+x                  0.00          0.00        100.00
+s                  0.00          0.00        100.00
+c                  0.00          0.00        100.00
+g                  0.00          0.00        100.00
+eps_pi            99.99          0.00          0.01
+eps_r              0.00         99.90          0.10
+
+
+
+MATRIX OF CORRELATIONS
+Variables         pi        y  r_alter        x        s        c        g
+pi            1.0000   0.9662   0.7894   0.9662  -0.8668  -0.8720   0.9191
+y             0.9662   1.0000   0.6044   1.0000  -0.7089  -0.7163   0.7865
+r_alter       0.7894   0.6044   1.0000   0.6044  -0.9904  -0.9888   0.9674
+x             0.9662   1.0000   0.6044   1.0000  -0.7089  -0.7163   0.7865
+s            -0.8668  -0.7089  -0.9904  -0.7089   1.0000   0.9999  -0.9932
+c            -0.8720  -0.7163  -0.9888  -0.7163   0.9999   1.0000  -0.9943
+g             0.9191   0.7865   0.9674   0.7865  -0.9932  -0.9943   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order           1       2       3       4       5
+pi         0.7049  0.5340  0.4289  0.3594  0.3097
+y          0.5716  0.3453  0.2237  0.1565  0.1178
+r_alter    0.9669  0.9046  0.8319  0.7578  0.6867
+x          0.5716  0.3453  0.2237  0.1565  0.1178
+s          0.9381  0.8639  0.7876  0.7141  0.6453
+c          0.9352  0.8597  0.7831  0.7096  0.6411
+g          0.9000  0.8100  0.7290  0.6561  0.5905
+Total computing time : 0h00m04s
+Note: warning(s) encountered in MATLAB/Octave code
